@@ -1,7 +1,6 @@
 #!/bin/bash
 
-function echo_numbers {
-  for i in {1..5}; do
-    echo $i
-  done
+get_input() {
+  # Run function like get_input <day_num> to get the daily input
+  INPUT=$(cat "../inputs/day$1.txt")
 }
